@@ -1,0 +1,345 @@
+body {
+    width: 100%;
+    max-width: 1200px;    
+    min-width: 800px;
+    max-height: 750px;     
+    margin: 0 auto;
+    position: relative;
+    background-color: #800000;
+}
+
+#logo {
+    margin: 50px auto 0 auto;
+    display: block;
+}
+
+#closed-scroll {
+    display: block;
+    margin: 0 auto;
+}
+
+#instructions-label {
+    position: absolute;
+    top: 630px;           
+    left: 49%;           
+    transform: translateX(-49%);
+    font-size: 21px;
+    font-family: "Almendra SC";
+    text-decoration: underline;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: color 0.2s ease; 
+}
+
+#instructions-label:hover, #instructions-label.keyboard-focus {
+    color: #f5f5f5;
+}
+
+#instructions-page, #sources-page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#instructions-page p{
+    position: absolute;
+    font-size: 18px;
+    font-family: "Almendra SC";
+    left: 365px;     
+    transform: none; 
+    text-align: left;
+}
+
+#sources-page p {
+    position: absolute;
+    font-size: 12px;
+    font-family: Lexend;
+    left: 350px;     
+    transform: none; 
+    text-align: left;
+}
+
+.line1 {
+    top: 150px;           
+}
+
+.line2 {
+    top: 225px;           
+}
+
+.line3 {
+    top: 290px;           
+}
+
+.line4 {
+    top: 365px;           
+}
+
+.line5 {
+    top: 440px;           
+}
+
+.line6 {
+    top: 500px;           
+}
+
+.close-instructions, .close-sources {
+    position: absolute;
+    top: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Lexend;
+    font-size: 21px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 4px solid #005EA0;
+    color: #005EA0;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.close-instructions:hover, .close-sources:hover, .close-instructions.keyboard-focus, .close-sources.keyboard-focus {
+    background-color: #005EA0;
+    border-color: transparent;
+    color: #f5f5f5;
+}
+
+.close-sources {
+    top: 555px;
+}
+
+.important-text {
+    font-family: "Caesar Dressing";
+    font-size: 24px;
+}
+
+.open-scroll {
+    display: block;
+    position: absolute;
+    height: 104%;
+    top: 0;           
+    left: 50%;           
+    transform: translateX(-50%);
+}
+
+#startgame {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0 30px 0;
+    font-family: Lexend;
+    font-size: 21px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    color: #202020;
+    border: 4px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+#startgame:hover {
+    background-color: transparent;
+    border-color: #f5f5f5;
+    color:#f5f5f5;
+}
+
+#startgame.keyboard-focus {
+    background-color: transparent;
+    border-color: #f5f5f5;
+    color:#f5f5f5;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+#gameInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#turnInfo, #gemInfo {
+    background-color: rgba(245, 245, 245, 0.4);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 10px 40px 10px 40px;
+}
+
+#turnInfo p, #gemInfo p {
+    font-family: "Caesar Dressing";
+    margin: 10px 0 10px 0;
+}
+
+#turnInfo {
+    margin-left: 190px;
+}
+
+#gemInfo {
+    margin-right: 190px;
+}
+
+#currentTurn, #magicGems {
+    font-size: 32px;
+}
+
+#finalTurn, #gemMax {
+    font-size: 18px;
+}
+
+#gemInfo {
+    text-align: right;
+}
+
+#display-cards {
+    display: flex;
+    gap: 35px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#settings {
+    position: relative;
+    z-index: 3;
+    margin-left: 980px;
+    margin-top: 40px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    outline: none;
+    background-color: #EACDCD;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#settings:hover, #settings.keyboard-focus {
+    background-color: #005EA0;
+}
+
+.icons {
+	font-size: 16px;
+	color: #005EA0;
+}
+
+#settings:hover i, #settings.keyboard-focus i {
+    color: #EACDCD;
+}
+
+#menuOptions {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 200px;
+    left: 860px;
+    top: 530px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+#menuOptions button {
+    border: none;
+    background-color: transparent;
+}
+
+#music, #help, #sources, #quit {
+    font-family: Lexend;
+    font-size: 16px;
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: #005EA0;
+    margin-bottom: 10px;
+}
+
+#menuOptions button:hover, #menuOptions button.keyboard-focus {
+    text-decoration: underline;
+    color: #005EA0;
+}
+
+#win-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ending-text {
+    text-align: center;
+    font-size: 128px;
+    font-family: "Caesar Dressing";
+    color: #FFF10C;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.end-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.endingBtn {
+    font-family: Lexend;
+    font-size: 21px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    background-color: #005EA0;
+    color: #f5f5f5;
+    border: 4px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.endingBtn:hover, .endingBtn.keyboard-focus {
+    background-color: transparent;
+    border-color: #F5F5F5;
+}
+
+#effectInfo {
+    font-family: "Caesar Dressing";
+    font-size: 31px;
+    top: 560px;
+    left: 655px;
+    color: #f5f5f5;
+    position: absolute;
+    z-index: 999;
+}
+
+body {
+    cursor: url('images/medieval-mouse.png'), default;
+} 
+
+.interactable:hover {
+    cursor: url('images/medieval-hand.png'), pointer;
+}
+
+#display-cards img {
+    transform: scale(1);
+    transition: transform 0.25s ease;
+}
+
+#display-cards img:hover, #display-cards img.keyboard-focus {
+    transform: scale(1.05);
+}

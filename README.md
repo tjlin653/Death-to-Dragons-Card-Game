@@ -7,3 +7,7 @@ Each turn, the player will be dealt 2 random cards: an EFFECT CARD on the left, 
 The gem card has a chance of offering the player either a positive or a negative gem value. The effect card is a high-risk, high-reward opportunity for the player.
 
 The player must then choose between the effect card and the gem card. Sometimes the player can choose between two good cards, but other times, they must choose between two terrible cards.
+
+Full keyboard navigation
+- Tab, arrow keys, Enter, and Space supported
+- No mouse required to play

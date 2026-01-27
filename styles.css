@@ -9,8 +9,45 @@ body {
 }
 
 #logo {
-    margin: 50px auto 0 auto;
+    margin: 200px auto 0 auto;
     display: block;
+}
+
+#startgame {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px 0 50px 0;
+    font-family: Lexend;
+    font-size: 36px;
+    width: 400px;
+    height: 80px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #f5f5f5;
+    color: #202020;
+    border: 4px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+#startgame:hover {
+    background-color: transparent;
+    border-color: #f5f5f5;
+    color:#f5f5f5;
+}
+
+#startgame.keyboard-focus {
+    background-color: transparent;
+    border-color: #f5f5f5;
+    color:#f5f5f5;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
 }
 
 #closed-scroll {
@@ -127,43 +164,6 @@ body {
     top: 0;           
     left: 50%;           
     transform: translateX(-50%);
-}
-
-#startgame {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px 0 30px 0;
-    font-family: Lexend;
-    font-size: 21px;
-    width: 250px;
-    height: 50px;
-    border-radius: 20px;
-    outline: none;
-    background-color: #f5f5f5;
-    color: #202020;
-    border: 4px solid transparent;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-#startgame:hover {
-    background-color: transparent;
-    border-color: #f5f5f5;
-    color:#f5f5f5;
-}
-
-#startgame.keyboard-focus {
-    background-color: transparent;
-    border-color: #f5f5f5;
-    color:#f5f5f5;
-}
-
-.hide {
-    display: none !important;
-}
-
-.show {
-    display: block !important;
 }
 
 #gameInfo {
@@ -345,5 +345,15 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-    
+    #logo {
+        margin: 50px auto 0 auto;
+    }
+
+    #startgame {
+        margin: 10px 0 30px 0;
+        font-size: 21px;
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+    }
 }

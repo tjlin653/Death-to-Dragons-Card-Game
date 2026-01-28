@@ -139,8 +139,7 @@
     startgameBtn.addEventListener('click', function(){
         screenBG.style.backgroundImage = "url('images/table.svg')";
         screenBG.style.backgroundSize = "cover";
-        screenBG.style.backgroundPosition = "center bottom";
-        screenBG.style.backgroundColor = 'transparent';
+        screenBG.style.backgroundColor = "transparent";
         homeScreen.classList.add('hide');
         homeScreen.classList.remove('show');
         gameScreen.classList.add('show');
